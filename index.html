@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Otkup vozila</title>
+    <script src="script.js" defer></script>
+    <title>
+      Otkup FIAT vozila | Vozila u svim stanjima (Ispravno, neispravno,
+      havarisano)
+    </title>
+    <link rel="icon" href="slike/favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Otkup FIAT vozila u Novom Sadu. Kupujemo sve modele u bilo kom stanju – ispravno, neispravno, havarisano. Kontaktirajte nas za brzu i jednostavnu prodaju."
+    />
+
+    <meta
+      name="keywords"
+      content="otkup FIAT vozila, otkup polovnih automobila, otkup havarisanih vozila, Novi Sad, FIAT, neispravni automobili, FIAT delovi, polovni delovi, FIAT Punto, FIAT Punto 2, FIAT Grande Punto, FIAT Grande Punto Evo, FIAT Punto Evo, FIAT Doblo"
+    />
+
+    <meta name="author" content="Otkup FIAT vozila Novi Sad" />
+
+    <meta
+      property="og:title"
+      content="Otkup FIAT vozila | Vozila u svim stanjima (Ispravno, neispravno,
+      havarisano)"
+    />
+    <meta
+      property="og:description"
+      content="Otkup FIAT vozila u Novom Sadu – vozila svih stanja. Brza i jednostavna prodaja automobila."
+    />
+    <meta property="og:image" content="slike/logo.webp" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:url" content="https://nsotkupvozila.info" />
+    <meta property="og:type" content="website" />
+
+    <meta name="geo.region" content="RS-06" />
+    <meta name="geo.placename" content="Novi Sad" />
+    <meta name="geo.position" content="45.26395846488784;19.84574531818592" />
+    <meta name="ICBM" content="45.26395846488784, 19.84574531818592" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta http-equiv="Content-Language" content="sr-RS" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,11 +52,12 @@
         <h1>Otkup vozila</h1>
         <nav>
           <ul>
-            <li><a href="#o-nama">O nama</a></li>
-            <li><a href="#usluge">Usluge</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#o-nama" title="Saznajte više o nama">O nama</a></li>
+            <li><a href="#usluge" title="Pogledajte naše usluge">Usluge</a></li>
+            <li><a href="#kontakt" title="Kontaktirajte nas">Kontakt</a></li>
           </ul>
         </nav>
+        
       </div>
     </header>
 
@@ -24,17 +65,42 @@
       <section id="o-nama" class="info-section">
         <h2>O nama</h2>
         <p>
-          Dobrodošli! Kupujemo vozila za gotovinu. Otkupujemo FIAT
-          automobile, bez obzira na stanje. Kontaktirajte nas ako želite da
-          prodate svoj auto!
+          Dobrodošli! Kupujemo vozila za gotovinu. Otkupujemo FIAT automobile,
+          bez obzira na stanje. Kontaktirajte nas ako želite da prodate svoj
+          auto!
         </p>
       </section>
+
       <section id="galerija" class="info-section">
         <div class="gallery">
-          <img src="slike/slika1.jpg" alt="Otkup vozila 1" />
-          <img src="slike/slika2.jpg" alt="Otkup vozila 2" />
-          <img src="slike/slika3.jpg" alt="Otkup vozila 3" />
-          <img src="slike/slika4.jpg" alt="Otkup vozila 4" />
+          <img
+            src="slike/slika1-small.webp"
+            alt="Otkup vozila 1"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            src="slike/slika2-small.webp"
+            alt="Otkup vozila 2"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            src="slike/slika3-small.webp"
+            alt="Otkup vozila 3"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            src="slike/slika4-small.webp"
+            alt="Otkup vozila 4"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -49,21 +115,25 @@
 
       <section id="kontakt" class="info-section">
         <h2>Kontakt</h2>
-        <p>Za više informacija, slobodno nas kontaktirajte:</p>
+        <p>Za više informacija i procene, slobodno nas kontaktirajte:</p>
         <p>Email: verisvozila@gmail.com</p>
-        <p>Telefon: <a href="tel:+381649779115">+381 64 977 9115</a><br>Dostupni na Viber i Whatsapp</p>
+        <p>
+          Telefon: <a href="tel:+381649779115" title="Pozovite nas na +381 64 977 9115">+381 64 977 9115</a><br>
+            Dostupni na:
+            <span class="viber">Viber</span> i 
+            <span class="whatsapp">WhatsApp</span>
+        </p>
       </section>
 
-      <button id="scrollButton" class="scroll-button">Nazad na vrh stranice</button>
+      <button id="scrollButton" class="scroll-button">
+        Nazad na vrh stranice
+      </button>
     </main>
 
     <footer>
       <div class="container">
-        <p>KONTAKT: <br>verisvozila@gmail.com  |  +381 64 977 9115        </p>
+        <p>KONTAKT: <br />verisvozila@gmail.com | +381 64 977 9115</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
-

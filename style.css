@@ -13,6 +13,11 @@ body {
     margin: auto;
     padding: 20px;
 }
+a[href^="tel:"] {
+    color: #ffcc00; /* Match with your main text color */
+    text-decoration: underline; /* Remove underline for a cleaner look */
+}
+
 
 header {
     background: #1e1e1e; /* Tamnija pozadina */
@@ -144,4 +149,11 @@ header h1 {
     animation: shake 1s ease-in-out;
     outline: 2px solid #ffcc00; /* Zlatna boja za obris */
 
+}
+.viber {
+    color: purple; /* Set Viber text color */
+}
+
+.whatsapp {
+    color: green; /* Set WhatsApp text color */
 }
