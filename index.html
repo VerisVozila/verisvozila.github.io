@@ -3,143 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
-    <title>
-      FIAT polovni delovi| Otkup vozila u svim stanjima (Ispravno, neispravno,
-      havarisano)
-    </title>
-    <link rel="icon" href="slike/favicon.ico" type="image/x-icon" />
+    <title>Auto Delovi - Polovni Delovi</title>
+    <meta name="geo.position" content="45.2671;19.8335" />
+    <!-- Latitude and Longitude for Novi Sad -->
+    <meta name="geo.placename" content="Novi Sad, Serbia" />
+    <meta name="geo.region" content="RS-VO" />
+    <!-- RS for Serbia, VO for Vojvodina region -->
+    <meta name="ICBM" content="45.2671, 19.8335" />
+
     <meta
       name="description"
-      content="Fiat polovni delovi i otkup FIAT vozila u Novom Sadu. Kupujemo sve modele u bilo kom stanju – ispravno, neispravno, havarisano. Kontaktirajte nas za brzu i jednostavnu prodaju."
+      content="Prodaja polovnih auto delova svih marki vozila u Novom Sadu. Kontaktirajte nas za delove u različitim stanjima po povoljnim cenama."
     />
-
     <meta
       name="keywords"
-      content="otkup FIAT vozila, otkup polovnih automobila, otkup havarisanih vozila, Novi Sad, FIAT, neispravni automobili, FIAT delovi, polovni delovi, FIAT Punto, FIAT Punto 2, FIAT Grande Punto, FIAT Grande Punto Evo, FIAT Punto Evo, FIAT Doblo"
+      content="polovni auto delovi Novi Sad, auto delovi, polovnjaci, auto delovi za sve marke, delovi za FIAT, delovi za Citroen, delovi za Pezo, polovni motor, polovni volan, auto elektrika"
     />
-
-    <meta name="author" content="Otkup FIAT vozila Novi Sad" />
-
+    <meta name="author" content="Auto Delovi Novi Sad" />
     <meta
       property="og:title"
-      content="FIAT polovni delovi| Otkup vozila u svim stanjima (Ispravno, neispravno,
-      havarisano)"
+      content="Auto Delovi Novi Sad | Polovni Delovi za Sve Marke Vozila"
     />
     <meta
       property="og:description"
-      content="Fiat polovni delovi i otkup FIAT vozila u Novom Sadu. Kupujemo sve modele u bilo kom stanju – ispravno, neispravno, havarisano. Kontaktirajte nas za brzu i jednostavnu prodaju."
+      content="Prodaja polovnih auto delova za sve marke vozila u Novom Sadu. Posetite nas za delove u različitim stanjima po pristupačnim cenama."
     />
     <meta property="og:image" content="slike/logo.webp" />
-    <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:url" content="https://nsotkupvozila.info" />
+    <meta property="og:url" content="nsotkupvozila.info" />
     <meta property="og:type" content="website" />
 
-    <meta name="geo.region" content="RS-06" />
-    <meta name="geo.placename" content="Novi Sad" />
-    <meta name="geo.position" content="45.26395846488784;19.84574531818592" />
-    <meta name="ICBM" content="45.26395846488784, 19.84574531818592" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+      }
 
-    <meta name="robots" content="index, follow" />
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 1rem;
+      }
 
-    <meta http-equiv="Content-Language" content="sr-RS" />
-    <link rel="stylesheet" href="style.css" />
+      .section {
+        margin: 2rem 0;
+        background-color: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .section h2 {
+        text-align: center;
+        color: #1f3b4d;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
+
+      .intro p {
+        font-size: 1.1rem;
+        text-align: center;
+      }
+
+      .contact {
+        text-align: center;
+        padding: 1rem;
+      }
+
+      .contact p {
+        margin: 0.5rem 0;
+        font-size: 1.1rem;
+      }
+
+      .contact a {
+        color: #1f3b4d;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        background-color: #1f3b4d;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: #61dafb;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .section h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>FIAT delovi</h1>
-        <nav>
-          <ul>
-            <li><a href="#delovi" title="Prodaja polovnih delova">Delovi</a></li>
-            <li><a href="#usluge" title="Pogledajte naše usluge">Usluge</a></li>
-            <li><a href="#kontakt" title="Kontaktirajte nas">Kontakt</a></li>
-          </ul>
-        </nav>
-        
+    <!-- Header with Background Image and Dark Overlay -->
+    <header
+      style="
+        position: relative;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        background: url('slike/image.webp') center/cover no-repeat;
+      "
+    >
+      <!-- Dark Overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 1;
+        "
+      ></div>
+
+      <!-- Header Content -->
+      <div
+        style="position: relative; z-index: 2; max-width: 1000px; margin: auto"
+      >
+        <h1
+          style="
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Polovni Auto Delovi
+        </h1>
+        <p
+          style="
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Fiat i Citroen. Uskoro još!
+        </p>
       </div>
     </header>
-    <main class="container">
-      <section id="delovi" class="info-section">
-        <h2>Prodaja polovnih delova</h2>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="section intro">
+        <h2>Dobrodošli!</h2>
         <p>
-          Nudimo veliki izbor polovnih FIAT delova za razne modele. Garancija na ispravnost 10 dana!
+          Polovni delovi za FIAT i Citroen vozila. Kontaktirati broj za sve
+          informacije i dostupnosti delova.
         </p>
-        <ul>
-          <li>Motori i delovi motora</li>
-          <li>Menjači</li>
-          <li>Karoserijski delovi</li>
-          <li>Elektronika i električni sistemi</li>
-          <li>Ostali delovi po zahtevu</li>
-        </ul>
-        <p>Kontaktirajte nas za dostupnost delova i cene:</p>
-        <p>Telefon: <a href="tel:+381649779115">+381 64 977 9115</a></p>
-      </section>
-      
-      <section id="galerija" class="info-section">
+      </div>
+
+      <div class="section">
+        <h2>Kontaktirajte Nas</h2>
+        <div class="contact">
+          <p>📞 Telefon: <a href="tel:+381601234567">+381 60 123 4567</a></p>
+          <p>📧 Email: verisvozila@gmail.com</p>
+          <p>📍 Lokacija: Novi Sad, Srbija</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Galerija</h2>
         <div class="gallery">
           <img
             src="slike/slika1-small.webp"
-            alt="Otkup vozila 1"
+            alt="deo1"
             width="320"
             height="240"
             loading="lazy"
           />
           <img
             src="slike/slika2-small.webp"
-            alt="Otkup vozila 2"
+            alt="deo2"
             width="320"
             height="240"
             loading="lazy"
           />
           <img
             src="slike/slika3-small.webp"
-            alt="Otkup vozila 3"
+            alt="deo3"
             width="320"
             height="240"
             loading="lazy"
           />
           <img
             src="slike/slika4-small.webp"
-            alt="Otkup vozila 4"
+            alt="deo4"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            src="slike/slika5-small.webp"
+            alt="deo5"
+            width="320"
+            height="240"
+            loading="lazy"
+          />
+          <img
+            src="slike/slika6-small.webp"
+            alt="deo6"
             width="320"
             height="240"
             loading="lazy"
           />
         </div>
-      </section>
-
-      <section id="usluge" class="info-section">
-        <h2>Usluge</h2>
-        <ul>
-          <li>Otkup vozila u svim stanjima</li>
-          <li>Brza procena vrednosti vozila</li>
-          <li>Gotovinska isplata odmah</li>
-        </ul>
-      </section>
-
-      <section id="kontakt" class="info-section">
-        <h2>Kontakt</h2>
-        <p>Za više informacija i procene, slobodno nas kontaktirajte:</p>
-        <p>Email: verisvozila@gmail.com</p>
-        <p>
-          Telefon: <a href="tel:+381649779115" title="Pozovite nas na +381 64 977 9115">+381 64 977 9115</a><br>
-            Dostupni na:
-            <span class="viber">Viber</span> i 
-            <span class="whatsapp">WhatsApp</span>
-        </p>
-      </section>
-
-      <button id="scrollButton" class="scroll-button">
-        Nazad na vrh stranice
-      </button>
-    </main>
-
-    <footer>
-      <div class="container">
-        <p>KONTAKT: <br />verisvozila@gmail.com | +381 64 977 9115</p>
       </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>📞 Telefon: <a href="tel:+381601234567">Kliknite ovde za poziv</a></p>
     </footer>
   </body>
 </html>
